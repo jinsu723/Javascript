@@ -10,7 +10,7 @@ console.log(numbers);
 
 // .join() : 전달한 값으로 구분한 뒤 문자열로 리턴
 console.log([1, 2, 3, 4, 5], typeof([1, 2, 3, 4, 5]));  // object
-console.log([1, 2, 3, 4, 5].join("  "), typeof([1, 2, 3, 4, 5].join("  ")));  // string
+console.log('조인 출력 결과 : ' + [1, 2, 3, 4, 5].join("  "), typeof([1, 2, 3, 4, 5].join("  ")));  // string
 
 // .slice(시작, 끝) : 원하는 부분을 추출하기 위해서 시작 인덱스와 마지막 인덱스를 전달한다
 // 마지막 인덱스는 포함되지 않는다
