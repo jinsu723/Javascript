@@ -1,47 +1,68 @@
+*{
+  padding: 0px;
+}
 
+header {
+  margin: 30px 0;
+  padding: 0;
+  height: 42px;
+  width: 100%;
+  background-color: green;
+  color: white;
+}
 
-.menu{
-  background-color : skyblue;
+header>ul {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-items:end;
+}
+
+.menu-box {
+  display: inline-block;
+  height: 42px;
+  width: 30%;
+  position: relative;
+  line-height: 42px;
+  text-align: center;
 }
 
 .menu-box:hover {
   background-color: deeppink;
 }
 
-/* .menu-box {
-  height: 30px;
-} */
-
-.header{
+.menu1-box-box, .menu2-box-box, .menu3-box-box {
+  display: block;
+  background-color: yellow;
+  position: absolute;
+  top: 42px;
   width: 100%;
-  height: 30px;
-}
-
-.menu {
-  display: flex;
-  font-size: 25px;
-  height: 50px;
-}
-
-.sub-menu {
-  list-style-type: none;
-  background-color: pink;
+  text-align: center;
   display: none;
 }
 
-.menu-box:nth-child(1):hover .sub-menu {
-  display: block;
-}
-.menu-box:nth-child(2):hover .sub-menu {
-  display: block;
-}
-.menu-box:nth-child(3):hover .sub-menu {
-  display: block;
-}
-.menu-box:nth-child(4):hover .sub-menu {
-  display: block;
+li {
+  font-size: 12px;
+  color: black;
+  list-style-type: none;
 }
 
 .home {
-  
+  background-color: deeppink;
+  width: 20%;
+  text-align: center;
+  line-height: 42px;
+  margin-left: auto;
+}
+
+.menu-box:hover .menu1-box-box{
+  display: block;
+}
+
+.menu-box:hover .menu2-box-box{
+  display: block;
+}
+
+.menu-box:hover .menu3-box-box{
+  display: block;
 }
