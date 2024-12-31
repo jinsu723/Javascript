@@ -22,7 +22,7 @@ function getAge1(name, age, num=1){
 }
 
 let result2 = getAge1("짱구", 5, "안녕");
-console.log(result);
+console.log('디폴트 매개변수 : ' + result2);
 
 // 아이디, 비밀번호, 이름을 전달받고 이름의 기본값을 사용자로 설정하기
 // 함수명 : introduce 매개변수o, 리턴값x

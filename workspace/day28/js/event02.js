@@ -11,9 +11,9 @@ const boxClick2 = document.querySelector('#click2');
 // console.log(boxClick2);
 
 function changeBgGreen(){
-  boxClick.setAttribute('style', 'background-color: green');
+  // boxClick.setAttribute('style', 'background-color: green');
   // console.log(this);
-  // this.setAttribute("style", "background-color: yellow");
+  this.setAttribute("style", "background-color: green");
 }
 
 boxClick.addEventListener("click", changeBgGreen);

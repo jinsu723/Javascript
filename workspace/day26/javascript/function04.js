@@ -21,7 +21,6 @@ let result = function (num) {
   }
 };
 
-
 result('10');
 result(10);
 result(typeof 10);

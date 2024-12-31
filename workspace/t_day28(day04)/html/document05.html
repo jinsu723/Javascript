@@ -16,8 +16,11 @@
   </div>
 </body>
 <script>
-  const result1 = document.querySelector("#myDiv_p p");
-  console.log(result1.innerText);
+  const result1 = document.querySelectorAll("#myDiv_p p");
+  // console.log(result1.innerText);
+  result1.forEach((result) => {
+    console.log(result.innerText);
+  })
   const result2 = document.querySelector(".myDiv span");
   console.log(result2.innerText);
 </script>
