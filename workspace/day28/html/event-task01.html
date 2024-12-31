@@ -1,0 +1,101 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button1">Click Me</button>
+    <button id="button2">Click Me</button>
+    <button id="button3">Click Me</button>
+    <button id="button4">Click Me</button>
+  </body>
+  <script>
+    // 각 버튼마다 출력 이벤트 추가(배경 색상 자유롭게 변경)
+    // 각 버튼을 클릭했을 때 몇 번 클릭했는지 콘솔창에 입력되도록 하기
+    // const button1 = document.querySelector('#button1');
+    // const button4 = document.querySelector('#button2');
+    // const button2 = document.querySelector('#button3');
+    // const button3 = document.querySelector('#button4');
+
+    // let count1 = 0;
+    // let count2 = 0;
+    // let count3 = 0;
+    // let count4 = 0;
+
+    // function changeBtBg1() {
+    //   button1.setAttribute('style', 'background-color: pink');
+    // }
+
+    // function changeBtBg2() {
+    //   button2.setAttribute('style', 'background-color: blue');
+    // }
+
+    // function changeBtBg3() {
+    //   button3.setAttribute('style', 'background-color: skyblue');
+    // }
+
+    // function changeBtBg4() {
+    //   button4.setAttribute('style', 'background-color: gold');
+    // }
+
+    // button1.addEventListener("click", function(){
+    //   changeBtBg1();
+    //   count1 ++;
+    //   console.log('버튼1 누른 횟수 : ' + count1);
+    // });
+
+    // button2.addEventListener("click", function(){
+    //   changeBtBg2();
+    //   count2 ++;
+    //   console.log('버튼2 누른 횟수 : ' + count2);
+    // });
+
+    // button3.addEventListener("click", function(){
+    //   changeBtBg3();
+    //   count3 ++;
+    //   console.log('버튼3 누른 횟수 : ' + count3);
+    // });
+
+    // button4.addEventListener("click", function(){
+    //   changeBtBg4();
+    //   count4 ++;
+    //   console.log('버튼4 누른 횟수 : ' + count4);
+    // });
+
+    // 색상 배열
+    const colors = {
+      button1 : 'red',
+      button2 : 'blue',
+      button3 : 'green',
+      button4 : 'yellow'
+    };
+
+    // 클릭 횟수를 저장하는 객체
+    const clickCount = {};
+    
+    // 모든 버튼에 이벤트 리스너 추가
+    document.querySelectorAll('button').forEach(button => {
+      // 각 버튼의 출력 횟수 0으로 초기화
+      clickCount[button.id] = 0;
+      // 출력 이벤트 추가
+      button.addEventListener('click', () => {
+        // 클릭 횟수 추가
+        clickCount[button.id]++;
+        // 배경색 변경
+        button.style.backgroundColor = colors[button.id];
+        // 콘솔에 클릿 횟수 출력
+        console.log(`${button.id} 출력 ${clickCount[button.id]}번`)
+      })
+    })
+  </script>
+</html>

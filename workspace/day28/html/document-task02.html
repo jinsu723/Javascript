@@ -1,0 +1,21 @@
+<!-- 11번 : 실습2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="text">text입니다</p>
+    <p class="text">text입니다</p>
+  </body>
+  <script>
+    // p 요소에 특정 클래스 추가하기
+    // 클래스 명 : p1
+    const result = document.getElementsByTagName("p");
+    console.log(result);
+    result[0].classList.add("p1");
+    result[1].classList.add("p1");
+  </script>
+</html>

@@ -60,14 +60,15 @@ const stu2 = new Student('도우너', 6, 50);
 const stu3 = new Student('또치', 5, 90);
 
 const students = [stu1, stu2, stu3];
-console.log(students);
 
 students.forEach(student => {
   console.log(`이름 : ${student.name}, 성적 : ${student.score}`);
 })
 
-function School(student){
-  this.student = student;
+class School{
+  constructor(student){
+    this.student = student;
+  }
 }
 
 const student1 = new School(stu1);
@@ -75,9 +76,6 @@ const student2 = new School(stu2);
 const student3 = new School(stu3);
 
 const schoolMember = [student1, student2, student3];
-console.log(schoolMember);
-
-console.log(schoolMember[1].student.name);
 
 //5. 포인트를 각각 객체에 추가하고 순서대로 point는 80, 50, 90이다
 // 포인트를 모두 더한 값을 출력하라.
@@ -85,11 +83,11 @@ students[0].point = 80;
 students[1].point = 50;
 students[2].point = 90;
 
-console.log(schoolMember);
+console.log(School.student,"ee");
 
 let pointSum = 0;
 for(let i in schoolMember){
-  pointSum += schoolMember[i].student.point; 
+  pointSum += schoolMember[i].point; 
 }
 
-console.log(pointSum);
+console.log('포인트 합계 : ' + pointSum);

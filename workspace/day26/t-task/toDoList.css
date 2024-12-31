@@ -1,0 +1,68 @@
+/* 전체 페이지 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* 네비게이션 스타일 */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* 본문 스타일 */
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+main h2 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 완료된 항목 스타일 */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}

@@ -118,7 +118,20 @@ day27
 	array : filter()을 호출할 배열(선택)
 	thisArgs : callback 함수 내에서 this 키워드가 참조할 객체(선택)
 
-7. 자바 스크립트 엔진 구조
+7. reduce() 함수
+	배열을 순회하면서 하나의 값으로 누적할 때 사용하는 함수
+	array.reduce(callback, initialValue);
+
+	callback : 배열의 각 요소에 대해 실행할 함수
+	initialValue : 누적 시작값, 첫 번째 호출에서 사용될 값
+		(작성하지 않으면 배열의 첫 번째 요수가 initialValue로 사용되고
+		두 번째 요소부터 순회가 시작된다)
+	accumulator : 누적된 값으로 각 호출에서 callback함수가 반환된 값
+	currntValue : 현재 처리중인 요소
+	currentIndex : 현재 요소의 인덱스(선택)
+	array : reduce()가 호출된 원본 배열(선택)
+
+8. 자바 스크립트 엔진 구조
 	싱글 쓰레드(single-thread)기반으로 작동한다
 	자바스크립트 엔진은 한 번에 하나의 코드 조각만 실행한다
 	동시성(concurrency) 모델을 사용한다
@@ -180,7 +193,7 @@ Data 영역
 Text 영역
 ================
 
-8. DOM
+9. DOM
 1) DOM API(Document Object Model APT)
 	문서의 객체 모델을 의미
 	div, span, input 과 같은 요소들을 모두 DOM 이라고 한다

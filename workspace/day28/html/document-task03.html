@@ -1,0 +1,42 @@
+<!-- 12번 : 실습3 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>아이템1</li>
+      <li>아이템2</li>
+      <li>아이템3</li>
+    </ul>
+  </body>
+  <script>
+    HTMLCollection.prototype.forEach = Array.prototype.forEach;
+
+    // 클레스 이름을 추가하고 li요소에 텍스트를 "새 아이템입니다"로 변경하기
+    // 첫 번째 li요소에는 css선택자를 사용하여 글자 색상을 red로 변경하기
+    const result = document.getElementsByTagName("li");
+    console.log(result);
+    result.forEach((results) => {
+      results.classList.add("id");
+    });
+
+    result.forEach((index) => {
+      index.innerText = "새 아이템입니다";
+    });
+
+    result[0].style.color = "red";
+
+
+    const li = document.querySelectorAll('li');
+    console.log(li);
+
+    // li.forEach((item) => {
+    //   item.classList.add('item');
+    //   item.innerText = '새 아이템입니다';
+    // })
+  </script>
+</html>

@@ -1,0 +1,26 @@
+<!-- 10번 : 실습1 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>박스1</div>
+    <div>박스2</div>
+    <div>박스3</div>
+    <div>박스4</div>
+    <div>박스5</div>
+  </body>
+  <script>
+    // querySelectAll을 이용해 모든 div 요소를 선택하여 짝수번째 요소에 배경색을 yellow로 변경하기
+    const result = document.querySelectorAll("div");
+    console.log(result);
+    result.forEach((results, index) => {
+      if (index % 2 == 1) {
+        results.style.backgroundColor = "yellow";
+      }
+    });
+  </script>
+</html>
