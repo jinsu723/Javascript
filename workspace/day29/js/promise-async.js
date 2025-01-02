@@ -1,7 +1,5 @@
 //10번
 
-// 9번 : promise
-
 //DB 빈 배열 생성
 const DB = [];
 
