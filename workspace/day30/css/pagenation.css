@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#content {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#pagenation-container {
+  /* border: 1px solid black; */
+  text-align: center;
+  cursor: pointer;
+  justify-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  border: 1px solid black;
+}
