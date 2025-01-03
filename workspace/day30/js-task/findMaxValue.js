@@ -5,10 +5,13 @@ numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];  // 1부터 10까지의 정수 �
 console.log(numbersArray);  // 배열에 저장된 값 출력
 
 function findMaxValue(arr){
-  let maxValue;
+  let maxValue = Number.MIN_VALUE;
   arr.forEach((value) => {
-    if(value > Number.MIN_VALUE){
+    if(value > maxValue){
       maxValue = value;
     }
-  })
+  });
+  return maxValue;
 }
+
+console.log(findMaxValue(numbersArray));
