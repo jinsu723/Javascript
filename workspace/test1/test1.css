@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(247, 247, 173);
+  justify-items: center;
+}
+
+header {
+  background-color: green;
+  justify-items: center;
+  height: 30vh;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+nav {
+  margin: 50px;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 20px;
+}
+
+main {
+background-color: rgb(91, 91, 44);
+justify-items: center;
+margin: 20px;
+padding: 30px;
+width: 50%;
+}
+
+#task-list {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
